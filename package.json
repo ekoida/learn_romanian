@@ -1,0 +1,12 @@
+{
+  "name": "learn_romanian",
+  "version": "1.0.0",
+  "description": "learn romanian helper",
+  "type": "module",
+  "main": "cli.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT"
+}

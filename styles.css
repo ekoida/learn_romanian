@@ -8,48 +8,28 @@
 
 body {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
-  align-items: start;
+  align-items: center;
   gap: 1.6rem;
 
-
-  >nav {
-    flex-basis: 150px;
-    background-color: var(--background-color);
-    border-radius: var(--radius);
-
-    >ul {
-      display: flex;
-      flex-direction: column;
-      list-style: none;
-      padding: 0;
-
-      >li {
-        height: 1.5rem;
-        padding-inline-start: .5rem;
-
-        >a {
-          display: inline-block;
-          height: 100%;
-          width: 100%;
-
-        }
-      }
-    }
-  }
-
   >main {
+
     background-color: var(--background-color);
     padding-inline: .5rem;
     border-radius: var(--radius);
     max-width: 80vw;
+    min-width: 80vw;
+    height: 100%;
 
     >figure {
       max-width: 40%;
+      height: 50vh;
 
       >img {
-        width: 100%;
+        width: 400px;
+        height: 500px;
+        object-fit: contain;
       }
 
       >figcaption {
