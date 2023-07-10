@@ -1,0 +1,72 @@
+:root {
+  --main-color: #8B1E3F;
+  --action-color: #3C153B;
+  --text-colot: #000;
+  --background-color: #F0EFF4;
+  --radius: .5rem;
+}
+
+body {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: start;
+  gap: 1.6rem;
+
+
+  >nav {
+    flex-basis: 150px;
+    background-color: var(--background-color);
+    border-radius: var(--radius);
+
+    >ul {
+      display: flex;
+      flex-direction: column;
+      list-style: none;
+      padding: 0;
+
+      >li {
+        height: 1.5rem;
+        padding-inline-start: .5rem;
+
+        >a {
+          display: inline-block;
+          height: 100%;
+          width: 100%;
+
+        }
+      }
+    }
+  }
+
+  >main {
+    background-color: var(--background-color);
+    padding-inline: .5rem;
+    border-radius: var(--radius);
+    max-width: 80vw;
+
+    >figure {
+      max-width: 40%;
+
+      >img {
+        width: 100%;
+      }
+
+      >figcaption {
+        background-color: #222;
+        color: #fff;
+        font: italic smaller sans-serif;
+        padding: 3px;
+        text-align: center;
+      }
+    }
+
+    >button {
+      background-color: var(--action-color);
+      color: var(--background-color);
+      width: fit-content;
+      height: 32px;
+      border-radius: calc(var(--radius) / 2);
+    }
+  }
+}
