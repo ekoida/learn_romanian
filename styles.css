@@ -17,6 +17,8 @@ body {
   >main {
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
     gap: 1rem;
     background-color: var(--background-color);
     padding-inline: 0.5rem;
@@ -32,14 +34,19 @@ body {
     }
 
     >figure {
-      max-width: 100%;
+      display: flex;
+      justify-content: center;
+      max-width: 70%;
       height: auto;
       margin: 0;
+
 
       >img {
         width: 100%;
         height: auto;
         object-fit: contain;
+
+
       }
 
       >figcaption {
