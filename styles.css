@@ -38,14 +38,13 @@ body {
       align-items: start;
       height: 80%;
       margin: 0;
+      overflow: hidden;
 
 
       >img {
         width: 100%;
         height: auto;
         object-fit: contain;
-
-
       }
 
       >figcaption {
