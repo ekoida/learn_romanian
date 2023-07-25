@@ -1,3 +1,5 @@
+import { list } from "./photo.js"
+
 let viewed = 0
 
 const next = document.querySelector('.next')
