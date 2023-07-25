@@ -20,6 +20,6 @@ async function createSrc(dir) {
 
 await createSrc('img')
 
-await writeFile('photo.js', JSON.stringify(result, null, 2))
+await writeFile('photo.js', `const list = ${JSON.stringify(result, null, 2)};`)
 
 console.log(result)

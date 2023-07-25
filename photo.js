@@ -1,4 +1,4 @@
-[
+const list = [
   "img/1 (2).jpg",
   "img/290de9e17b406f8f02c38243aee4a6b6.jpg",
   "img/33igwww-1-600x399.jpg",
@@ -212,4 +212,4 @@
   "img/sageata.jpg",
   "img/tabla.jpg",
   "img/зеркало в багете(1).jpg"
-]
+];
