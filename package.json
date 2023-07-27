@@ -5,12 +5,10 @@
   "type": "module",
   "main": "cli.js",
   "scripts": {
-    "start": "vite start",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node -e console.log('hello')",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "copy": "node cli.js"
   },
   "author": "",
-  "license": "MIT",
-  "devDependencies": {
-    "vite": "^4.4.3"
-  }
+  "license": "MIT"
 }
