@@ -1,9 +1,9 @@
 :root {
-  --main-color: #8B1E3F;
-  --action-color: #3C153B;
+  --main-color: #8b1e3f;
+  --action-color: #3c153b;
   --text-colot: #000;
-  --background-color: #F0EFF4;
-  --radius: .5rem;
+  --background-color: #f0eff4;
+  --radius: 0.5rem;
 }
 
 body {
@@ -26,9 +26,43 @@ body {
     background-color: var(--background-color);
     padding-inline: 0.5rem;
     border-radius: var(--radius);
-    max-width: 80vw;
+    max-width: 100vw;
     min-width: 80vw;
     min-height: 100vh;
+
+    & .menu {
+      position: absolute;
+      right: -180px;
+      opacity: 0;
+      padding-inline: 0.2rem;
+      padding-block: 0.4rem;
+      width: 10rem;
+      background-color: #d3d3d3;
+      z-index: 1;
+
+      .show& {
+        transition: opacity, right 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+        opacity: 1;
+        right: 0;
+      }
+
+      > .filters {
+        list-style: none;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 0.2rem;
+
+        & .filter-item {
+          width: 100%;
+          height: 32px;
+          background-color: orange;
+          cursor: pointer;
+        }
+      }
+    }
 
     & figure {
       position: relative;
@@ -42,6 +76,10 @@ body {
       & img {
         width: 50%;
         object-fit: contain;
+
+        @media (width < 700px) {
+          width: 100%;
+        }
       }
 
       & figcaption {
@@ -51,18 +89,20 @@ body {
         font: italic smaller sans-serif;
         padding: 3px;
         text-align: center;
+
+        @media (width < 700px) {
+          width: 100%;
+        }
       }
     }
-
-
   }
 
   & .navigation {
-    position: absolute;
-    bottom: 1.5rem;
+    position: fixed;
+    bottom: calc(1rem + env(safe-area-inset-bottom));
     display: flex;
     flex-direction: column;
-    gap: .5rem;
+    gap: 0.5rem;
     align-self: flex-end;
     align-items: stretch;
 

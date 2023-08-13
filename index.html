@@ -1,33 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+    />
+    <title>Learn Romanian</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Learn Romanian</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
+  <body>
+    <main>
+      <h1>Invatam limba romana</h1>
+      <nav>
+        <div>
+          <button class="filter-control">Filters</button>
+          <menu class="menu">
+            <ul class="filters">
+              <li>
+                <button class="filter-item" data-filter="masculin">
+                  Masculin
+                </button>
+              </li>
+              <li>
+                <button class="filter-item" data-filter="femenin">
+                  Femenin
+                </button>
+              </li>
+              <li>
+                <button class="filter-item" data-filter="olga-3">Olga 3</button>
+              </li>
+              <li>
+                <button class="filter-item" data-filter="olga-4">Olga 4</button>
+              </li>
+              <li>
+                <button class="filter-item" data-filter="olga-5">Olga 5</button>
+              </li>
+              <li>
+                <button class="filter-item" data-filter="olga-6">Olga 6</button>
+              </li>
+              <li>
+                <button class="filter-item" data-filter="olga-7">Olga 7</button>
+              </li>
+              <li>
+                <button class="filter-item" data-filter="lesson-7">
+                  lesson 7
+                </button>
+              </li>
+              <li>
+                <button class="filter-item" data-filter="урок-7">урок 7</button>
+              </li>
+              <li>
+                <button class="filter-item" data-filter="урок-8">урок 8</button>
+              </li>
+              <li>
+                <button class="filter-item" data-filter="урок-8">урок 9</button>
+              </li>
+              <li>
+                <button class="filter-item" data-filter="all">Все</button>
+              </li>
+            </ul>
+          </menu>
+        </div>
+      </nav>
+      <figure class="image">
+        <figcaption>
+          <p class="description"></p>
+        </figcaption>
+        <img src="" alt="" />
+      </figure>
 
-<body>
-
-  <main>
-    <h1>Invatam limba romana</h1>
-    <figure class="image">
-      <figcaption>
-        <p class="description"></p>
-      </figcaption>
-      <img src="" alt="">
-    </figure>
-
-    <nav class="navigation">
-      <button type="button" class="control next">&rightarrow;</button>
-      <button type="button" class="control prev">&leftarrow;</button>
-    </nav>
-  </main>
-  <audio>
-    <source src="./sounds/click.wav">
-  </audio>
-  <script type="module" src="./script.js"></script>
-</body>
-
+      <nav class="navigation">
+        <button type="button" class="control next">&rightarrow;</button>
+        <button type="button" class="control prev">&leftarrow;</button>
+      </nav>
+    </main>
+    <audio>
+      <source src="./sounds/click.wav" />
+    </audio>
+    <script type="module" src="./script.js"></script>
+  </body>
 </html>
